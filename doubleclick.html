@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double CLick Event & Slideup jQuery</title>
+    <style>
+        p{
+            padding: 20px;
+            font: 20px sans-serif;
+            background: khaki;
+        }
+    </style>
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+
+$(document).ready(function(){
+    $("p").dblclick(function(){
+        $(this).slideUp();
+    });
+
+    $("#show").click(function(){
+            $("p").show();
+          });
+          
+});
+
+    </script>
+</head>
+<body>
+
+    <p>Double-click on me and I'll disappear.</p>
+    <p>Double-click on me and I'll disappear.</p>
+    <p>Double-click on me and I'll disappear.</p>
+
+    <button id="show">Show</button>
+    
+</body>
+</html>
